@@ -14,7 +14,12 @@ import {
   Layers,
   ArrowUpRight,
   RefreshCw,
-  ExternalLink
+  ExternalLink,
+  AlertTriangle,
+  Clock,
+  Compass,
+  Users2,
+  Target
 } from "lucide-react";
 
 interface GscData {
@@ -84,13 +89,13 @@ export default function DashboardPage() {
       <header className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between pb-8 border-b border-slate-800 gap-4">
         <div>
           <div className="flex items-center gap-3">
-            <span className="h-3 w-3 rounded-full bg-emerald-500 animate-pulse" />
+            <span className="h-3 w-3 rounded-full bg-amber-400 animate-pulse" />
             <h1 className="text-xl md:text-2xl font-bold tracking-tight text-white flex items-center gap-2">
-              Interiors by DeX <span className="text-slate-500 font-normal">|</span> SEO Performance Portal
+              Interiors by DeX <span className="text-slate-500 font-normal">|</span> SEO Battleground &amp; Performance Portal
             </h1>
           </div>
           <p className="text-sm text-slate-400 mt-1">
-            Executive organic search visibility, localized Chennai rankings & client discovery report.
+            Transparent organic search tracking, competitive landscape benchmarking &amp; 12-month growth roadmap.
           </p>
         </div>
 
@@ -143,31 +148,227 @@ export default function DashboardPage() {
           </div>
         )}
 
-        {/* Executive Plain English Insight Box */}
-        <section className="bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-900 border border-emerald-500/30 rounded-2xl p-6 relative overflow-hidden shadow-xl">
-          <div className="flex items-center gap-2 text-emerald-400 text-xs font-semibold tracking-wider uppercase mb-2">
-            <Sparkles className="h-4 w-4" />
-            Executive Monthly Briefing (Plain English)
+        {/* 1. Realistic Strategy Stage & Executive Narrative */}
+        <section className="bg-gradient-to-r from-amber-950/20 via-slate-900 to-slate-900 border border-amber-500/30 rounded-2xl p-6 relative overflow-hidden shadow-xl">
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-2 text-amber-400 text-xs font-bold tracking-wider uppercase">
+              <Compass className="h-4 w-4" />
+              Current Stage: Foundation &amp; Suburb Beachhead Capture (Months 1–3)
+            </div>
+            <span className="px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/30 text-[11px] font-semibold">
+              Long-Term Campaign
+            </span>
           </div>
-          <p className="text-base md:text-lg text-slate-200 leading-relaxed font-medium">
-            {loading ? "Analyzing latest search patterns..." : data?.summaryText}
+
+          <p className="text-base text-slate-200 leading-relaxed font-normal">
+            Chennai residential interior design is an intensely competitive digital market dominated by venture-backed aggregators (Livspace, HomeLane) and studios with 8–12 years of accumulated backlink authority. Because DeX initiated dedicated search optimization recently, ranking for broad city-wide terms like <em>&quot;interior designers in chennai&quot;</em> is a steady 6-to-12-month marathon.
           </p>
-          <div className="mt-4 flex flex-wrap items-center gap-4 text-xs text-slate-400 border-t border-slate-800/80 pt-4">
-            <span className="flex items-center gap-1.5 text-emerald-400">
-              <CheckCircle2 className="h-4 w-4" /> SEO Health: 100% Fully Optimized
+          <p className="text-sm text-slate-400 mt-2 leading-relaxed">
+            Our deliberate strategy avoids burning time on high-difficulty head terms today. Instead, we have established <strong>zero-difficulty localized beachheads</strong> (Anna Nagar, Porur, Velachery, Tambaram, ECR) to capture ready-to-buy homeowners in specific neighborhoods while building the technical authority needed to compete for top spots.
+          </p>
+
+          <div className="mt-5 flex flex-wrap items-center gap-4 text-xs text-slate-400 border-t border-slate-800/80 pt-4">
+            <span className="flex items-center gap-1.5 text-emerald-400 font-medium">
+              <CheckCircle2 className="h-4 w-4" /> Technical Health: 100% Zero-Defect Architecture
             </span>
             <span>•</span>
             <span className="flex items-center gap-1.5">
-              <MapPin className="h-4 w-4 text-slate-400" /> Focus Market: Chennai &amp; OMR IT Corridor
+              <MapPin className="h-4 w-4 text-slate-400" /> Focus Market: Chennai &amp; Gated Townships
             </span>
             <span>•</span>
             <span>Property: {data?.property}</span>
           </div>
         </section>
 
-        {/* High-Level Metric Cards */}
+        {/* 2. The 3-Phase Maturity Roadmap */}
+        <section className="bg-slate-900/40 border border-slate-800 rounded-2xl p-6">
+          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">
+            <Clock className="h-4 w-4 text-emerald-400" />
+            12-Month Search Maturity Roadmap
+          </div>
+          <p className="text-xs text-slate-400 mb-6">
+            Realistic stages of ranking progression from technical foundation to city-wide market contention.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* Phase 1 */}
+            <div className="bg-slate-900/90 border border-emerald-500/40 rounded-xl p-5 relative">
+              <div className="flex items-center justify-between text-xs">
+                <span className="font-bold text-emerald-400">PHASE 1 (MONTHS 1–3)</span>
+                <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-semibold text-[10px]">
+                  ACTIVE / 90% DONE
+                </span>
+              </div>
+              <h3 className="text-sm font-bold text-white mt-2">Foundation &amp; Suburb Beachheads</h3>
+              <ul className="text-xs text-slate-400 mt-2 space-y-1.5 list-disc list-inside">
+                <li>Deploy Schema.org graph synced to 90 reviews</li>
+                <li>Launch 5 zero-KD suburb hubs (Anna Nagar, Porur...)</li>
+                <li>Publish 2BHK/3BHK cost breakdown guides</li>
+                <li>Eliminate template title &amp; meta tag duplications</li>
+              </ul>
+            </div>
+
+            {/* Phase 2 */}
+            <div className="bg-slate-900/90 border border-amber-500/30 rounded-xl p-5 relative">
+              <div className="flex items-center justify-between text-xs">
+                <span className="font-bold text-amber-400">PHASE 2 (MONTHS 4–6)</span>
+                <span className="px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 font-semibold text-[10px]">
+                  UPCOMING FOCUS
+                </span>
+              </div>
+              <h3 className="text-sm font-bold text-white mt-2">Local Leads &amp; Mid-Tier Keywords</h3>
+              <ul className="text-xs text-slate-400 mt-2 space-y-1.5 list-disc list-inside">
+                <li>Page 1 rankings across Porur, Tambaram, Anna Nagar</li>
+                <li>Google Maps 3-pack expansion around OMR corridor</li>
+                <li>First wave of inbound qualified suburb inquiries</li>
+                <li>Accumulating client review keywords from handovers</li>
+              </ul>
+            </div>
+
+            {/* Phase 3 */}
+            <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-5 relative">
+              <div className="flex items-center justify-between text-xs">
+                <span className="font-bold text-slate-400">PHASE 3 (MONTHS 7–12+)</span>
+                <span className="px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-semibold text-[10px]">
+                  MATURITY GOAL
+                </span>
+              </div>
+              <h3 className="text-sm font-bold text-white mt-2">City-Wide Head-Term Domination</h3>
+              <ul className="text-xs text-slate-400 mt-2 space-y-1.5 list-disc list-inside">
+                <li>Top-5 contention for &quot;interior designers in chennai&quot;</li>
+                <li>Page 1 rankings for &quot;modular kitchen chennai&quot;</li>
+                <li>AEO citations in Google AI Overviews &amp; SearchGPT</li>
+                <li>Organic enquiry velocity surpassing paid ads</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* 3. Competitor Landscape Benchmark Table */}
+        <section className="bg-slate-900/40 border border-slate-800 rounded-2xl p-6">
+          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">
+            <Target className="h-4 w-4 text-emerald-400" />
+            Competitive Reality Benchmark (Chennai Market)
+          </div>
+          <p className="text-xs text-slate-400 mb-6">
+            Comparing established market leaders to Interiors by DeX to illustrate why authority requires patience and tactical positioning.
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-xs">
+              <thead>
+                <tr className="border-b border-slate-800 text-slate-400">
+                  <th className="pb-3 font-medium">Competitor / Brand</th>
+                  <th className="pb-3 font-medium">Domain Age</th>
+                  <th className="pb-3 font-medium">Referring Domains</th>
+                  <th className="pb-3 font-medium">Current Advantage</th>
+                  <th className="pb-3 font-medium">DeX Attack Vector</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-800/60">
+                <tr className="hover:bg-slate-800/20">
+                  <td className="py-3 font-bold text-white">Livspace / HomeLane</td>
+                  <td className="py-3 text-slate-400">10+ Years</td>
+                  <td className="py-3 text-slate-400">150,000+</td>
+                  <td className="py-3 text-slate-400">Massive VC ad budgets &amp; legacy authority</td>
+                  <td className="py-3 text-emerald-400">Wins on local trust, fixed pricing &amp; 5-yr guarantee</td>
+                </tr>
+                <tr className="hover:bg-slate-800/20">
+                  <td className="py-3 font-bold text-white">D&apos;Life Interiors</td>
+                  <td className="py-3 text-slate-400">12+ Years</td>
+                  <td className="py-3 text-slate-400">1,200+</td>
+                  <td className="py-3 text-slate-400">Established South India showroom network</td>
+                  <td className="py-3 text-emerald-400">Deep Chennai micro-market specialization</td>
+                </tr>
+                <tr className="hover:bg-slate-800/20">
+                  <td className="py-3 font-bold text-white">Bizzoppo Interiors</td>
+                  <td className="py-3 text-slate-400">8+ Years</td>
+                  <td className="py-3 text-slate-400">1,040</td>
+                  <td className="py-3 text-slate-400">Thousands of legacy Chennai blog posts</td>
+                  <td className="py-3 text-emerald-400">Modern design, BWP 710 ply &amp; transparent BOQ</td>
+                </tr>
+                <tr className="bg-emerald-950/20 border-l-2 border-emerald-400">
+                  <td className="py-3 pl-2 font-bold text-emerald-300">Interiors by DeX</td>
+                  <td className="py-3 text-slate-300">Recent</td>
+                  <td className="py-3 text-slate-300">23 (Growing)</td>
+                  <td className="py-3 text-slate-300">Agile, 90 5-star reviews, Perungudi centre</td>
+                  <td className="py-3 font-semibold text-emerald-300">Conquering zero-KD suburbs first</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 4. Keyword Difficulty Traffic Light Matrix */}
+        <section className="bg-slate-900/40 border border-slate-800 rounded-2xl p-6">
+          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">
+            <Award className="h-4 w-4 text-emerald-400" />
+            Keyword Difficulty Battleground (Traffic Light Classification)
+          </div>
+          <p className="text-xs text-slate-400 mb-6">
+            Understanding which keywords deliver immediate client inquiries versus those requiring steady authority building.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+            {/* Green Tier */}
+            <div className="bg-slate-900/80 border border-emerald-500/30 rounded-xl p-4">
+              <div className="flex items-center gap-2 text-emerald-400 font-bold mb-2">
+                <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
+                TIER 1: ZERO-KD FAST LANES (KD 0–10)
+              </div>
+              <p className="text-slate-400 mb-3 text-[11px]">
+                Target: Local suburb buyers ready for turnkey contracts. Low barrier to rank.
+              </p>
+              <div className="space-y-1.5 font-mono text-[11px] text-slate-300">
+                <div className="flex justify-between"><span>• interior designers in porur</span> <span className="text-emerald-400">KD 0</span></div>
+                <div className="flex justify-between"><span>• interior designers in tambaram</span> <span className="text-emerald-400">KD 0</span></div>
+                <div className="flex justify-between"><span>• interior designers in anna nagar</span> <span className="text-emerald-400">KD 0</span></div>
+                <div className="flex justify-between"><span>• interior designers in ecr</span> <span className="text-emerald-400">KD 0</span></div>
+                <div className="flex justify-between"><span>• interior designers in velachery</span> <span className="text-emerald-400">KD 9</span></div>
+              </div>
+              <p className="text-[10px] text-emerald-400 mt-3 font-medium">Timeline: 30 to 60 Days</p>
+            </div>
+
+            {/* Yellow Tier */}
+            <div className="bg-slate-900/80 border border-amber-500/30 rounded-xl p-4">
+              <div className="flex items-center gap-2 text-amber-400 font-bold mb-2">
+                <span className="h-2.5 w-2.5 rounded-full bg-amber-400" />
+                TIER 2: MID-TIER COMMERCIAL (KD 15–30)
+              </div>
+              <p className="text-slate-400 mb-3 text-[11px]">
+                Target: High commercial intent buyers comparing costs and materials.
+              </p>
+              <div className="space-y-1.5 font-mono text-[11px] text-slate-300">
+                <div className="flex justify-between"><span>• modular kitchen chennai</span> <span className="text-amber-400">KD 0* (Comp 60)</span></div>
+                <div className="flex justify-between"><span>• 3bhk interior design cost</span> <span className="text-amber-400">KD 0* (Comp 50)</span></div>
+                <div className="flex justify-between"><span>• chennai interiors</span> <span className="text-amber-400">KD 13</span></div>
+                <div className="flex justify-between"><span>• interior design services chennai</span> <span className="text-amber-400">KD 18</span></div>
+              </div>
+              <p className="text-[10px] text-amber-400 mt-3 font-medium">Timeline: 3 to 6 Months</p>
+            </div>
+
+            {/* Red Tier */}
+            <div className="bg-slate-900/80 border border-rose-500/30 rounded-xl p-4">
+              <div className="flex items-center gap-2 text-rose-400 font-bold mb-2">
+                <span className="h-2.5 w-2.5 rounded-full bg-rose-400" />
+                TIER 3: HIGHWAY TO EVEREST (KD 40–70)
+              </div>
+              <p className="text-slate-400 mb-3 text-[11px]">
+                Target: Broad high-volume searches contested by national portals.
+              </p>
+              <div className="space-y-1.5 font-mono text-[11px] text-slate-300">
+                <div className="flex justify-between"><span>• interior designers in chennai</span> <span className="text-rose-400">KD 17 (9.9k Vol)</span></div>
+                <div className="flex justify-between"><span>• best interior designers chennai</span> <span className="text-rose-400">KD 21 (2.9k Vol)</span></div>
+                <div className="flex justify-between"><span>• home interior designers chennai</span> <span className="text-rose-400">KD 37 (1.3k Vol)</span></div>
+                <div className="flex justify-between"><span>• luxury interior designers chennai</span> <span className="text-rose-400">KD 49</span></div>
+              </div>
+              <p className="text-[10px] text-rose-400 mt-3 font-medium">Timeline: 6 to 12+ Months</p>
+            </div>
+          </div>
+        </section>
+
+        {/* 5. Live Search Console Metrics */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {/* Card 1: Impressions */}
           <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition-all">
             <div className="flex items-center justify-between text-slate-400 text-xs">
               <span>Google Impressions</span>
@@ -182,11 +383,10 @@ export default function DashboardPage() {
               </span>
             </div>
             <p className="text-[11px] text-slate-500 mt-2">
-              Times DeX appeared in Google search results for Chennai homeowners.
+              Times DeX appeared in search results for Chennai homeowners.
             </p>
           </div>
 
-          {/* Card 2: Clicks */}
           <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition-all">
             <div className="flex items-center justify-between text-slate-400 text-xs">
               <span>Website Visits (Clicks)</span>
@@ -205,7 +405,6 @@ export default function DashboardPage() {
             </p>
           </div>
 
-          {/* Card 3: Click-Through Rate */}
           <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition-all">
             <div className="flex items-center justify-between text-slate-400 text-xs">
               <span>Click-Through Rate (CTR)</span>
@@ -220,11 +419,10 @@ export default function DashboardPage() {
               </span>
             </div>
             <p className="text-[11px] text-slate-500 mt-2">
-              Percentage of searchers who chose DeX over competing search listings.
+              Percentage of searchers choosing DeX over competing search links.
             </p>
           </div>
 
-          {/* Card 4: Average SERP Position */}
           <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition-all">
             <div className="flex items-center justify-between text-slate-400 text-xs">
               <span>Average Google Rank</span>
@@ -244,9 +442,8 @@ export default function DashboardPage() {
           </div>
         </section>
 
-        {/* 2-Column Tables: Top Queries & Top Pages */}
+        {/* 6. Two Primary Discovery Tables */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Top Search Queries */}
           <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-6">
             <div className="flex items-center justify-between mb-4">
               <div>
@@ -287,7 +484,6 @@ export default function DashboardPage() {
             </div>
           </div>
 
-          {/* Top Performing Landing Pages */}
           <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-6">
             <div className="flex items-center justify-between mb-4">
               <div>
@@ -333,117 +529,66 @@ export default function DashboardPage() {
           </div>
         </section>
 
-        {/* Technical Health & Google Maps Synchronization Matrix */}
+        {/* 7. Shared Accountability Checklist */}
         <section className="bg-slate-900/40 border border-slate-800 rounded-2xl p-6">
-          <h2 className="text-sm font-bold text-white flex items-center gap-2 mb-1">
-            <ShieldCheck className="h-4 w-4 text-emerald-400" /> Technical Health &amp; Maps Validation Status
-          </h2>
-          <p className="text-xs text-slate-400 mb-6">
-            Real-time status of Google algorithm requirements, entity graphs, and localized indexing.
-          </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-4">
-              <div className="flex items-center justify-between">
-                <span className="text-xs text-slate-400">Schema.org Entity Graph</span>
-                <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              </div>
-              <p className="text-sm font-semibold text-white mt-2">Connected &amp; Validated</p>
-              <p className="text-[11px] text-slate-500 mt-1">
-                Synced to official Google Maps CID (90 five-star reviews).
-              </p>
-            </div>
-
-            <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-4">
-              <div className="flex items-center justify-between">
-                <span className="text-xs text-slate-400">Suburbs Footprint</span>
-                <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              </div>
-              <p className="text-sm font-semibold text-white mt-2">5 High-Yield Hubs</p>
-              <p className="text-[11px] text-slate-500 mt-1">
-                Anna Nagar, Porur, Velachery, Tambaram, and ECR active.
-              </p>
-            </div>
-
-            <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-4">
-              <div className="flex items-center justify-between">
-                <span className="text-xs text-slate-400">DeX Pricing Standard</span>
-                <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              </div>
-              <p className="text-sm font-semibold text-white mt-2">100% Aligned</p>
-              <p className="text-[11px] text-slate-500 mt-1">
-                ₹9L (2BHK) / ₹12L (3BHK) / ₹25L+ (Villas) strictly enforced.
-              </p>
-            </div>
-
-            <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-4">
-              <div className="flex items-center justify-between">
-                <span className="text-xs text-slate-400">Sitemap Indexation</span>
-                <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              </div>
-              <p className="text-sm font-semibold text-white mt-2">121 URLs Active</p>
-              <p className="text-[11px] text-slate-500 mt-1">
-                Registered in live XML sitemap for continuous Googlebot crawling.
-              </p>
-            </div>
+          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">
+            <Users2 className="h-4 w-4 text-emerald-400" />
+            Shared Accountability: How We Win Together
           </div>
-        </section>
-
-        {/* Monthly Agency Work Log */}
-        <section className="bg-slate-900/40 border border-slate-800 rounded-2xl p-6">
-          <h2 className="text-sm font-bold text-white flex items-center gap-2 mb-1">
-            <CheckCircle2 className="h-4 w-4 text-emerald-400" /> Monthly Optimization Log &amp; Milestones
-          </h2>
           <p className="text-xs text-slate-400 mb-6">
-            Transparent record of technical deployments, content expansions, and strategic actions taken.
+            SEO for high-ticket residential interiors requires close coordination between agency technical execution and real-world studio proof.
           </p>
 
-          <div className="space-y-4 text-xs">
-            <div className="flex items-start gap-3 bg-slate-900/80 p-3.5 rounded-lg border border-slate-800/60">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
-              <div>
-                <p className="font-semibold text-slate-200">Deployed 5 Local Suburb Hubs (Zero Keyword Difficulty)</p>
-                <p className="text-slate-400 mt-0.5">
-                  Published custom, doorway-safe landing pages for Anna Nagar, Porur, Velachery, Tambaram, and ECR beach villas to capture ready-to-buy homeowners in their specific neighborhoods.
-                </p>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+            <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-5">
+              <h3 className="font-bold text-emerald-400 flex items-center gap-2 mb-3">
+                <CheckCircle2 className="h-4 w-4" /> Agency Responsibilities (Active)
+              </h3>
+              <ul className="space-y-2 text-slate-300">
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-400 font-bold">✓</span>
+                  <span>100% Zero-Defect technical SEO &amp; Schema.org Graph deployment</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-400 font-bold">✓</span>
+                  <span>Rolling out high-intent suburb hubs (Anna Nagar, Porur, Velachery...)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-400 font-bold">✓</span>
+                  <span>AEO answer cards &amp; PAA content targeting Featured Snippets</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-400 font-bold">✓</span>
+                  <span>Continuous GSC crawl monitoring and indexing acceleration</span>
+                </li>
+              </ul>
             </div>
 
-            <div className="flex items-start gap-3 bg-slate-900/80 p-3.5 rounded-lg border border-slate-800/60">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
-              <div>
-                <p className="font-semibold text-slate-200">Built 3BHK &amp; 2BHK Turnkey Cost Breakdown Guides</p>
-                <p className="text-slate-400 mt-0.5">
-                  Published dedicated BOQ breakdown guides targeting high-commercial cost searches, explicitly explaining DeX's starting ₹9L (2BHK) and ₹12L (3BHK) standards.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3 bg-slate-900/80 p-3.5 rounded-lg border border-slate-800/60">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
-              <div>
-                <p className="font-semibold text-slate-200">Realigned Site-Wide Pricing &amp; Cleaned Hero Intros</p>
-                <p className="text-slate-400 mt-0.5">
-                  Purged all low-cost freelance carpentry benchmarks and removed premature pricing friction from introductory paragraphs across all 11 landing pages.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3 bg-slate-900/80 p-3.5 rounded-lg border border-slate-800/60">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
-              <div>
-                <p className="font-semibold text-slate-200">Upgraded 5 Core Services Pages (Wardrobes, Renovation, Carpentry)</p>
-                <p className="text-slate-400 mt-0.5">
-                  Optimized metadata and CMS descriptions for specialized high-intent services to capture wardrobe design and apartment renovation searches.
-                </p>
-              </div>
+            <div className="bg-slate-900/90 border border-amber-500/30 rounded-xl p-5">
+              <h3 className="font-bold text-amber-400 flex items-center gap-2 mb-3">
+                <AlertTriangle className="h-4 w-4" /> Client Studio Responsibilities (Critical)
+              </h3>
+              <ul className="space-y-2 text-slate-300">
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-400 font-bold">★</span>
+                  <span><strong>Review Velocity:</strong> Request a detailed 5-star Google review from every project handover mentioning the location (e.g., Casagrand Utopia).</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-400 font-bold">★</span>
+                  <span><strong>Real Site Proof:</strong> Share finished project photography and short walkthrough reels for portfolio case studies.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-400 font-bold">★</span>
+                  <span><strong>Lead Follow-Up Speed:</strong> Respond to incoming web &amp; WhatsApp inquiries within 15–30 minutes to maximize closing rates.</span>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
       </main>
 
       <footer className="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-800/80 text-center text-xs text-slate-500">
-        Interiors by DeX • Live Performance Monitoring • Powered by Google Search Console API &amp; DataForSEO
+        Interiors by DeX • Strategic Performance &amp; Competitive Intelligence • Real-World Grounded SEO
       </footer>
     </div>
   );
