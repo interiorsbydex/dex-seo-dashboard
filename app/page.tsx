@@ -559,6 +559,14 @@ export default function DashboardPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-400 font-bold">✓</span>
+                  <span>Dedicated NRI Remote Turnkey Hub (/nri-home-interior-services-chennai) live</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-400 font-bold">✓</span>
+                  <span>High-volume master guides deployed (TV units, dual-fan ceilings, acrylic vs laminate)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-400 font-bold">✓</span>
                   <span>Continuous GSC crawl monitoring and indexing acceleration</span>
                 </li>
               </ul>
