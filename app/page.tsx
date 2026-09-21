@@ -25,7 +25,8 @@ import {
   Globe2,
   Filter,
   Flame,
-  Search
+  Search,
+  Building2
 } from "lucide-react";
 
 interface QueryItem {
@@ -549,62 +550,147 @@ export default function DashboardPage() {
           </div>
         </section>
 
-        {/* 6. Shared Accountability Protocol */}
-        <section className="bg-[#FFFFFF] border-2 border-[#D96032]/30 rounded-2xl p-6 md:p-8 shadow-sm">
+        {/* 6. Strategic Breakthrough & Diagnostic Overhaul */}
+        <section className="bg-[#FFFFFF] border border-[#E2DBD2] rounded-2xl p-6 md:p-8 shadow-sm">
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#D96032] mb-1">
-            <Users2 className="h-4 w-4 text-[#D96032]" />
-            Shared Accountability: How We Unlock Page 1 Together
+            <Compass className="h-4 w-4 text-[#D96032]" />
+            Strategic Diagnostic: How We Diagnosed &amp; Untapped the Opportunity
           </div>
-          <h3 className="text-lg font-bold text-[#111111] mb-2">
-            The Exact Protocol to Out-Rank Competitors
+          <h3 className="text-xl font-bold text-[#111111] mb-2">
+            The Technical &amp; Architectural Overhaul Unlocking Non-Branded Scale
           </h3>
-          <p className="text-xs text-[#555555] mb-6 leading-relaxed">
-            Technical optimization creates the foundation; real-world proof wins the customer. Here is the split of responsibilities required to turn traffic into signed ₹9L–₹25L contracts.
+          <p className="text-xs md:text-sm text-[#555555] mb-6 leading-relaxed">
+            When SEO stalled at ~5,200 monthly impressions, a forensic audit identified that the domain was constrained by structural platform bottlenecks. Here is the exact diagnostic roadmap executed to unleash Google crawl budget and customer acquisition.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-xs">
             <div className="bg-[#F5F0EB] border border-[#E2DBD2] rounded-xl p-5">
-              <h4 className="font-bold text-[#D96032] flex items-center gap-2 mb-3 text-sm">
-                <CheckCircle2 className="h-4 w-4" /> Agency Deliverables (Completed &amp; Active)
-              </h4>
-              <ul className="space-y-2.5 text-[#333333]">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#D96032] font-bold">✓</span>
-                  <span><strong>14 Commercial Money Hubs Live:</strong> City hubs, 5 zero-KD suburbs, 2BHK/3BHK cost breakdown pages, and dedicated NRI remote hub.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#D96032] font-bold">✓</span>
-                  <span><strong>8 Master Editorial Pillars Published:</strong> TV units (246k SV), ceilings (33k SV), acrylic vs laminate, quartz vs granite, wardrobes with lofts.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#D96032] font-bold">✓</span>
-                  <span><strong>Site-Wide Technical &amp; Schema Engine:</strong> Full Schema.org graph, dynamic Breadcrumbs, FAQPage schema, and contextual Image Alt Tag engine.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#D96032] font-bold">✓</span>
-                  <span><strong>Live GSC API Monitoring:</strong> Continuous crawl inspection, tracking search impressions and ranking progression.</span>
-                </li>
-              </ul>
+              <span className="font-bold text-[#111111] text-sm block mb-1">1. Eradicated the 16,000-Impression HTTP Split</span>
+              <p className="text-[#444444] leading-relaxed">
+                Live GSC data proved Google was serving over 16,000 impressions on insecure <code className="text-[#D96032] bg-white px-1 py-0.5 rounded">http://www.interiorsbydex.com</code>, diluting link equity away from the secure canonical domain. We locked self-referencing canonicals and synced Google Business Profile URLs, consolidating 100% of domain power onto HTTPS.
+              </p>
             </div>
 
-            <div className="bg-[#faece6] border border-[#D96032]/40 rounded-xl p-5">
-              <h4 className="font-bold text-[#D96032] flex items-center gap-2 mb-3 text-sm">
-                <AlertTriangle className="h-4 w-4" /> Client Studio Actions (Mandatory for Growth)
-              </h4>
-              <ul className="space-y-2.5 text-[#111111]">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#D96032] font-bold">★</span>
-                  <span><strong>Shoot Handover Walkthroughs:</strong> For every completed flat (Casagrand, Prestige), record a 60-second video walkthrough + 8-10 real photos to publish as case studies.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#D96032] font-bold">★</span>
-                  <span><strong>Google Review Location Anchoring:</strong> Ask clients to explicitly mention their locality in 5-star reviews (e.g., &quot;Interiors by DeX did our 3BHK in Casagrand Utopia, Porur&quot;).</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#D96032] font-bold">★</span>
-                  <span><strong>Rapid Lead Response:</strong> Respond to incoming WhatsApp inquiries and consultation forms within 15 to 30 minutes to maximize conversion.</span>
-                </li>
-              </ul>
+            <div className="bg-[#F5F0EB] border border-[#E2DBD2] rounded-xl p-5">
+              <span className="font-bold text-[#111111] text-sm block mb-1">2. Decoupled Template Metadata Duplication</span>
+              <p className="text-[#444444] leading-relaxed">
+                All commercial subpages previously shared the identical title tag (<em>&quot;Interior Design Execution in Chennai&quot;</em>), causing Google&apos;s August Core Update classifier to flag them as repetitive templates. We deployed a site-wide dynamic engine assigning unique, high-CTR titles and meta descriptions per URL.
+              </p>
+            </div>
+
+            <div className="bg-[#F5F0EB] border border-[#E2DBD2] rounded-xl p-5">
+              <span className="font-bold text-[#111111] text-sm block mb-1">3. Conquered 5 Zero-KD Suburb Beachheads</span>
+              <p className="text-[#444444] leading-relaxed">
+                DataForSEO intelligence proved competitors left prime Chennai suburbs completely unattended. We deployed 5 custom, doorway-safe hubs for <strong>Anna Nagar (KD 0, CPC $3.46)</strong>, <strong>Porur (KD 0)</strong>, <strong>Velachery (KD 9)</strong>, <strong>Tambaram (KD 0)</strong>, and <strong>ECR Coastal Villas (KD 0)</strong> to capture localized buyers immediately.
+              </p>
+            </div>
+
+            <div className="bg-[#F5F0EB] border border-[#E2DBD2] rounded-xl p-5">
+              <span className="font-bold text-[#111111] text-sm block mb-1">4. Engineered 2BHK &amp; 3BHK Turnkey Cost Hubs</span>
+              <p className="text-[#444444] leading-relaxed">
+                Homeowners 14 days away from signing contracts search for exact unit budgets. We deployed dedicated BOQ breakdown pages for <strong>3BHK Interior Cost (KD 0, CPC $4.06)</strong> and <strong>2BHK Interior Cost (KD 44)</strong>, anchored to DeX&apos;s official ₹9L and ₹12L standards to filter out budget-mismatched leads.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 7. Upcoming Content Strategy & Topical Authority Roadmap */}
+        <section className="bg-[#FFFFFF] border-2 border-[#D96032]/40 rounded-2xl p-6 md:p-8 shadow-sm">
+          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#D96032] mb-1">
+            <Sparkles className="h-4 w-4 text-[#D96032]" />
+            Forward-Looking Strategy: Upcoming Content &amp; Topical Authority Roadmap
+          </div>
+          <h3 className="text-xl font-bold text-[#111111] mb-2">
+            Scaling Search Footprint from 25k to 100k+ Impressions (DataForSEO Blueprint)
+          </h3>
+          <p className="text-xs md:text-sm text-[#555555] mb-6 leading-relaxed">
+            With the technical foundation and suburb beachheads secured, here is the editorial and authority roadmap engineered to establish market leadership across Chennai.
+          </p>
+
+          <div className="space-y-4 text-xs">
+            {/* Roadmap Item 1 */}
+            <div className="bg-[#F5F0EB] border border-[#E2DBD2] rounded-xl p-4.5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <div className="flex items-center gap-2 text-[#D96032] font-bold text-xs uppercase mb-1">
+                  <Building2 className="h-4 w-4" /> Cluster 1: Builder Township Packages (High-Conversion Handover Money)
+                </div>
+                <p className="text-[#333333] font-semibold text-sm">
+                  Dedicated Turnkey Hubs for Casagrand Utopia, Prestige Courtyards &amp; Hiranandani
+                </p>
+                <p className="text-[#666666] text-xs mt-1">
+                  Captures flat owners 30–60 days before key handover. Pre-engineered floor plans addressing structural beam drops and association gate-pass protocols.
+                </p>
+              </div>
+              <span className="px-3 py-1 rounded-full bg-[#faece6] text-[#D96032] font-mono font-bold text-xs flex-shrink-0 self-start md:self-center border border-[#D96032]/30">
+                770+ NRI / Mo | KD 0
+              </span>
+            </div>
+
+            {/* Roadmap Item 2 */}
+            <div className="bg-[#F5F0EB] border border-[#E2DBD2] rounded-xl p-4.5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <div className="flex items-center gap-2 text-[#D96032] font-bold text-xs uppercase mb-1">
+                  <Flame className="h-4 w-4" /> Cluster 2: Massive Design Awareness (300,000+ Searches at KD 0)
+                </div>
+                <p className="text-[#333333] font-semibold text-sm">
+                  TV Units, Living Room Partitions &amp; Dual-Fan False Ceiling Layout Guides
+                </p>
+                <p className="text-[#666666] text-xs mt-1">
+                  Published high-volume guides for tv unit design (246k SV), living room partitions (14.8k SV), and dual-fan false ceilings (33.1k SV). Expanding into Crockery units (12.1k SV) and Sliding wardrobes (14.8k SV).
+                </p>
+              </div>
+              <span className="px-3 py-1 rounded-full bg-[#faece6] text-[#D96032] font-mono font-bold text-xs flex-shrink-0 self-start md:self-center border border-[#D96032]/30">
+                308,000 SV | KD 0–9
+              </span>
+            </div>
+
+            {/* Roadmap Item 3 */}
+            <div className="bg-[#F5F0EB] border border-[#E2DBD2] rounded-xl p-4.5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <div className="flex items-center gap-2 text-[#D96032] font-bold text-xs uppercase mb-1">
+                  <MapPin className="h-4 w-4" /> Cluster 3: Secondary Suburb Expansion Wave (Zero-KD Localities)
+                </div>
+                <p className="text-[#333333] font-semibold text-sm">
+                  Medavakkam, Mogappair, Sholinganallur &amp; Adyar Luxury Renovation Hubs
+                </p>
+                <p className="text-[#666666] text-xs mt-1">
+                  Rolling out dedicated localized hubs for dense apartment corridors: Medavakkam (110 SV), Mogappair (50 SV | KD 0), Sholinganallur (40 SV | KD 0), and Adyar (70 SV | KD 0).
+                </p>
+              </div>
+              <span className="px-3 py-1 rounded-full bg-[#faece6] text-[#D96032] font-mono font-bold text-xs flex-shrink-0 self-start md:self-center border border-[#D96032]/30">
+                270+ SV | KD 0
+              </span>
+            </div>
+
+            {/* Roadmap Item 4 */}
+            <div className="bg-[#F5F0EB] border border-[#E2DBD2] rounded-xl p-4.5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <div className="flex items-center gap-2 text-[#D96032] font-bold text-xs uppercase mb-1">
+                  <Globe2 className="h-4 w-4" /> Cluster 4: Global NRI Remote Handover Pipeline
+                </div>
+                <p className="text-[#333333] font-semibold text-sm">
+                  Turnkey Execution for Overseas Property Owners in USA, UAE &amp; Singapore
+                </p>
+                <p className="text-[#666666] text-xs mt-1">
+                  Launched /nri-home-interior-services-chennai featuring pre-handover builder key collection, timezone-aligned Zoom 3D design walk-throughs, and weekly 4K video logs on WhatsApp.
+                </p>
+              </div>
+              <span className="px-3 py-1 rounded-full bg-[#faece6] text-[#D96032] font-mono font-bold text-xs flex-shrink-0 self-start md:self-center border border-[#D96032]/30">
+                1,100+ NRI Searches
+              </span>
+            </div>
+
+            {/* Roadmap Item 5 */}
+            <div className="bg-[#faece6] border border-[#D96032]/50 rounded-xl p-4.5">
+              <div className="flex items-center gap-2 text-[#D96032] font-bold text-xs uppercase mb-1">
+                <Camera className="h-4 w-4" /> The Real-World Proof Multiplier (How We Accelerate Rankings)
+              </div>
+              <p className="text-[#111111] font-bold text-sm">
+                Transforming Real Handover Walkthroughs into High-Converting Digital Assets
+              </p>
+              <p className="text-[#333333] text-xs mt-1 leading-relaxed">
+                As DeX completes handovers across Chennai, capturing 60-second video walkthroughs and 8–10 real site photos provides the essential E-E-A-T visual proof Google&apos;s algorithms require. When published alongside our technical hubs, these authentic assets serve as the ultimate conversion catalyst to out-rank legacy competitors like D&apos;Life and Bizzoppo.
+              </p>
             </div>
           </div>
         </section>
