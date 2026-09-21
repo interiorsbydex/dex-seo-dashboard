@@ -7,11 +7,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          50: '#f0fdf4',
-          500: '#22c55e',
-          600: '#16a34a',
-          900: '#14532d',
+        dex: {
+          bg: '#F5F0EB',
+          accent: '#D96032',
+          accentHover: '#bf4f24',
+          accentLight: '#faece6',
+          card: '#FFFFFF',
+          cardMuted: '#EDE7E0',
+          border: '#E2DBD2',
+          borderDark: '#D1C7BA',
+          text: '#111111',
+          textMuted: '#555555',
+          textSubtle: '#777777',
         }
       }
     },
